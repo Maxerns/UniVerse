@@ -1,0 +1,224 @@
+.about-header {
+  background: url(../../../src/assets/MainBackground.png);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+} 
+
+.slashed-about {
+    position: absolute;
+    top: 1350px;
+    left: 0;
+    right: 0;
+    bottom: -900px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.5));
+  }
+  
+  .top,
+  .bot {
+    position: absolute;
+    text-align: center;
+    font: 22px/100px arial;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: white;
+  
+    &:before {
+      content: attr(title);
+    
+    }
+  
+    
+  }
+  
+  .top {
+    top: 0;
+    left: 2px;
+    right: 0;
+    bottom: 50%;
+  
+    &:before {
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+    }
+  }
+  
+  .bot {
+    top: 50%;
+    left: 0;
+    right: 2px;
+    bottom: 0;
+  
+    &:before {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .about-desc {
+    font-family: 'Overpass' sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: 20px;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.7));    
+    
+  }
+
+  .powerpoint_button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border: 2.5px solid;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 7px;
+    font-size: 12px;
+    padding: 5px 10px;
+    filter: drop-shadow(0 0 0.20rem rgba(255, 255, 255, 0.7));    
+    border-color: rgb(255, 255, 255, 1);
+    background-color: transparent;
+  }
+
+  .powerpoint_button:hover {
+    cursor: pointer;
+    background-color: white;
+
+  }
+
+  .powerpoint_buttonlink {
+    color: white;
+    display: flex;
+    text-decoration: none;
+  }
+
+  .figma_button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border: 2.5px solid;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin: 15px; 
+    font-size: 12px;
+    padding: 5px 10px;
+    filter: drop-shadow(0 0 0.20rem rgba(255, 255, 255, 0.7));    
+    border-color: rgb(255, 255, 255, 1);
+    background-color: transparent;   
+  }
+
+  .figma_button:hover {
+    cursor: pointer;
+    background-color: white;
+    
+  }
+
+  .figma_buttonlink {
+    color: white;
+    display: flex;
+    text-decoration: none;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    position: relative;
+    top: 40px;
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  
+  @media only screen and (min-width: 768px) {
+
+    .slashed-about {
+      transform: scale(1.4) translate(0px, 275px);
+    }
+
+    .about-desc {
+      font-size: 22px;
+    }
+
+    .powerpoint_button {
+      font-size: 18px;
+      margin: 15px;
+    }
+
+    .figma_button {
+      font-size: 18px;
+      margin: 15px;
+    }
+
+    .footer-content {
+      transform: scale(1.0);
+    }
+    
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+    .slashed-about {
+      transform: scale(1.8) translate(0px, 675px);
+    }
+
+    .about-desc {
+      font-size: 28px;
+    }
+
+    .powerpoint_button {
+      font-size: 24px;
+      margin: 20px;
+    }
+
+    .figma_button {
+      font-size: 24px;
+      margin: 20px;
+    }
+
+    .footer-content {
+      transform: scale(1.2);
+    }
+    
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .slashed-about {
+      transform: scale(1.2) translate(0px, 125px);
+    }
+
+    .about-desc {
+      font-size: 26px;
+    }
+
+    
+    .powerpoint_button {
+      font-size: 22px;
+      margin: 15px;
+    }
+
+    .figma_button {
+      font-size: 22px;
+      margin: 15px;
+    }
+
+    .footer-content {
+      transform: scale(1.0);
+    }
+
+
+  }
+  

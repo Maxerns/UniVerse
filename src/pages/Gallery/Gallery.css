@@ -1,0 +1,113 @@
+.Gallery-header {
+    background: url(../../../src/assets/MainBackground.png);    min-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  } 
+
+
+.slashed-gallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -900px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.5));
+  }
+  
+  .top,
+  .bot {
+    position: absolute;
+    text-align: center;
+    font: 22px/100px arial;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: white;
+  
+    &:before {
+      content: attr(title);
+    
+    }
+  
+    
+  }
+  
+  .top {
+    top: 0;
+    left: 2px;
+    right: 0;
+    bottom: 50%;
+  
+    &:before {
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+    }
+  }
+  
+  .bot {
+    top: 50%;
+    left: 0;
+    right: 2px;
+    bottom: 0;
+  
+    &:before {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+.Gallery-mockup1 {
+    width: 90%;
+    padding: 3rem;
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+
+}
+
+.Gallery-mockup2 {
+    width: 90%;
+    padding: 3rem;
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+
+}
+
+.Gallery-mockup3 {
+    width: 110%;
+    padding: 3rem;
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.3));
+}
+
+@media only screen and (min-width: 768px) {
+
+  .slashed-gallery {
+    transform: scale(1.4);
+    top: 300px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .slashed-gallery {
+    transform: scale(1.8);
+    top: 900px;
+  }
+  
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .slashed-gallery {
+    transform: scale(1.2);
+    top: 50px;
+  }
+  
+
+}

@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  display: flex;
+  height: 40vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 0.35rem rgba(0, 255, 175, 0.5));
+  margin: -2rem;
+  margin-top: 2rem;
+  
+}
+
+.App-mockup {
+  display: flex;
+  width: 100%;
+  filter: drop-shadow(0 0 0.65rem rgba(255, 255, 255, 0.2));
+  margin: -2rem auto 2rem; /* Set margin to center horizontally */
+}
+
+.App-header {
+  background: url(../../../src/assets/MainBackground.png);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} 
+
+.App-link {
+  color: #61dafb;
+}
+
+.App p {
+  font-family: 'Overpass' sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15rem;
+  filter: drop-shadow(0 0 0.4rem rgba(255, 255, 255, 0.6));
+}
+
+.slashed-app {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(0px, 225px);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.5));
+}
+
+.top,
+.bot {
+  position: relative;
+  text-align: center;
+  font: 22px/100px arial;
+  text-transform: uppercase;
+  overflow: hidden;
+  color: white;
+
+  &:before {
+    content: attr(title);
+  
+  }
+
+  
+}
+
+.top {
+  top: 0;
+  left: 2px;
+  right: 0;
+  bottom: 50%;
+
+  &:before {
+    position: relative;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.bot {
+  top: 50%;
+  left: 0;
+  right: 2px;
+  bottom: 0;
+
+  &:before {
+    position: relative;
+    top: -50px;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .App-mockup {
+    width: 80%;
+    margin: -2rem auto 2rem;
+  }
+
+  .slashed-app {
+    display: flex;
+    transform: scale(1.4);  
+    top: 750px;
+    
+  }
+  
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .App-mockup {
+    width: 80%;
+    margin: -2rem auto 2rem;
+  }
+
+  .slashed-app {
+    transform: scale(1.8);  
+    top: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .App-logo {
+    height: 30vmin;
+  }
+  
+  .App-mockup {
+    width: 40%;
+  }
+
+  .slashed-app {
+    transform: scale(1.2);
+    top: 650px;
+  }
+  
+}
