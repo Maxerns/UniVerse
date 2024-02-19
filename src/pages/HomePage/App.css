@@ -14,9 +14,9 @@
 
 .App-mockup {
   display: flex;
-  width: 100%;
+  width: 90%;
   filter: drop-shadow(0 0 0.65rem rgba(255, 255, 255, 0.2));
-  margin: -2rem auto 2rem; /* Set margin to center horizontally */
+  margin: -1rem auto 2rem; 
 }
 
 .App-header {
@@ -47,7 +47,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  transform: translate(0px, 225px);
+  transform: translate(0px, 300px);
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.5));
 }
@@ -97,19 +97,38 @@
   }
 }
 
+@media (min-width: 576px) {
 
-
-@media only screen and (min-width: 768px) {
+  .App-logo {
+    height: 30vmin;
+  }
 
   .App-mockup {
-    width: 80%;
+    width: 60%;
     margin: -2rem auto 2rem;
   }
 
   .slashed-app {
     display: flex;
-    transform: scale(1.4);  
-    top: 750px;
+    transform: scale(1.0);  
+    top: 500px;
+    
+  }
+
+}
+
+
+@media (min-width: 768px) {
+
+  .App-mockup {
+    width: 60%;
+    margin: -4rem auto 2rem;
+  }
+
+  .slashed-app {
+    display: flex;
+    transform: scale(1.2);  
+    top: 700px;
     
   }
   
@@ -117,15 +136,43 @@
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 992px) { 
   .App-mockup {
-    width: 80%;
+    width: 60%;
     margin: -2rem auto 2rem;
   }
 
   .slashed-app {
-    transform: scale(1.8);  
-    top: 1000px;
+    display: flex;
+    transform: scale(1.4);  
+    top: 700px;
+    
+  }
+  
+  
+}
+
+@media (min-width: 1024px) {
+  .App-mockup {
+    width: 60%;
+    margin: -3rem auto 2rem;
+  }
+
+  .slashed-app {
+    transform: scale(1.4);  
+    top: 700px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .App-mockup {
+    width: 60%;
+    margin: -3rem auto 2rem;
+  }
+
+  .slashed-app {
+    transform: scale(1.4);  
+    top: 800px;
   }
 }
 
